@@ -1,9 +1,10 @@
-# ui-test-seed
+# ui-test-seed-protractor
 
 Template for UI test automation project, using:
 
 * CucumberJS
 * Selenium 3
+* Protractor 5
 
 ## Prerequisites
 
@@ -13,4 +14,10 @@ Template for UI test automation project, using:
 
 ```
 $> npm install
+```
+
+## Running tests
+
+```
+$> npm test
 ```
