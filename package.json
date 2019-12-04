@@ -1,33 +1,33 @@
 {
-  "name": "ui-test-seed",
+  "name": "ui-test-seed-protractor",
   "version": "0.0.1",
-  "description": "Template for UI test automation project, using CucumberJS and Selenium3",
+  "description": "Template for UI test automation project, using CucumberJS and Protractor5/Selenium3",
   "main": "-",
   "scripts": {
-    "test": "cucumber-js features/**/*.feature --require support/**/*.js --require step_definitions/**/*.js --format progress --format json:cucumber.json --format-options \"{\\\"colorsEnabled\\\": true}\""
+    "pretest": "webdriver-manager update --chrome",
+    "test": "protractor config/protractor.config.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/szikszail/ui-test-seed.git"
+    "url": "git+https://github.com/szikszail/ui-test-seed-protractor.git"
   },
   "keywords": [
     "CucumberJS",
-    "Selenium Webdriver"
+    "Protractor"
   ],
-  "author": "Laszlo Szikszai <laszlo_szikszai@epam.com>",
+  "author": "Laszlo Szikszai <sziklaszlo@gmail.com>",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/szikszail/ui-test-seed/issues"
+    "url": "https://github.com/szikszail/ui-test-seed-protractor/issues"
   },
-  "homepage": "https://github.com/szikszail/ui-test-seed#readme",
+  "homepage": "https://github.com/szikszail/ui-test-seed-protractor#readme",
   "dependencies": {
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "chai-each": "^0.0.1",
     "chai-sorted": "^0.2.0",
-    "chromedriver": "^78.0.1",
     "cucumber": "^6.0.4",
-    "cucumber-pretty": "^6.0.0",
-    "selenium-webdriver": "^3.6.0"
+    "protractor": "^5.4.2",
+    "protractor-cucumber-framework": "^6.2.0"
   }
 }

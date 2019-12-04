@@ -1,3 +1,4 @@
 const { setDefaultTimeout } = require("cucumber");
+const { defaultTimeout } = require("../config/timeout.json");
 
-setDefaultTimeout(30e3);
+setDefaultTimeout(defaultTimeout);

@@ -1,0 +1,7 @@
+{
+    "defaultTimeout": 60000,
+    "allScriptsTimeout": 120000,
+    "getPageTimeout": 120000,
+    "implicitlyWait": 2000,
+    "pageLoadTimeout": 40000
+}
